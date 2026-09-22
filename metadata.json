@@ -1,0 +1,7 @@
+{
+  "name": "Saral",
+  "description": "Offline Legal & RTI Document Simplifier — photographs confusing legal, government, and bill documents to explain them in plain language with deadlines and action items.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f2a"/>
+      <stop offset="50%" stop-color="#1b1244"/>
+      <stop offset="100%" stop-color="#2a103c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  
+  <!-- Subtle inner border -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="3"/>
+  
+  <!-- Document Sheet Shape with folded corner -->
+  <path d="M148 116 C148 104 158 96 170 96 L310 96 L364 150 L364 396 C364 408 354 416 342 416 L170 416 C158 416 148 408 148 396 Z" fill="#131633" stroke="url(#accent)" stroke-width="6"/>
+  <path d="M310 96 L310 150 L364 150 Z" fill="#1e224d" stroke="url(#accent)" stroke-width="4"/>
+
+  <!-- Stylized "S" / Document simplify spark -->
+  <!-- Scan lines representing simplification -->
+  <line x1="184" y1="180" x2="280" y2="180" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="184" y1="220" x2="328" y2="220" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  <line x1="184" y1="260" x2="260" y2="260" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Glowing Simplify Emblem (Checkmark / Sparkle) -->
+  <circle cx="340" cy="360" r="48" fill="url(#glow)"/>
+  <path d="M322 360 L334 372 L360 346" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Saral "S" overlay in central negative space -->
+  <text x="230" y="365" font-family="'Unbounded', sans-serif" font-weight="900" font-size="76" fill="url(#accent)" text-anchor="middle">S</text>
+</svg>

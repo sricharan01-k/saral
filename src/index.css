@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #312E81;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #312E81;
+    font-weight: 700;
+  }
+}
+
+/* Card: solid white #FFFFFF, no transparency or blur, 16px border-radius, soft single-direction shadow (0 2px 12px rgba(0,0,0,0.06)) */
+.card-surface {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(49, 46, 129, 0.08);
+}
+
+/* Primary Action Button: solid indigo #312E81 fill, white text, 12px border-radius, 56px min height, bold label with an icon to its left */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #312E81;
+  color: #FFFFFF;
+  border-radius: 12px;
+  min-height: 56px;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  text-align: left;
+}
+
+.btn-primary:hover {
+  background-color: #26236b;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+  background-color: #1e1b4b;
+}
+
+/* Accent Positive Action Button: teal #0D9488 */
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #0D9488;
+  color: #FFFFFF;
+  border-radius: 12px;
+  min-height: 56px;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  text-align: left;
+}
+
+.btn-accent:hover {
+  background-color: #0b7a70;
+}
+
+.btn-accent:active {
+  transform: scale(0.98);
+  background-color: #086159;
+}
+
+/* Secondary Action Button: white fill, 2px indigo border, indigo text, same shape and size */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #FFFFFF;
+  border: 2px solid #312E81;
+  color: #312E81;
+  border-radius: 12px;
+  min-height: 56px;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  text-align: left;
+}
+
+.btn-secondary:hover {
+  background-color: #F4EFEB;
+}
+
+.btn-secondary:active {
+  transform: scale(0.98);
+  background-color: #ECE5DE;
+}
+
+/* Destructive Action Button: white fill, 2px border and text in #DC2626, only fills red on press */
+.btn-destructive {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #FFFFFF;
+  border: 2px solid #DC2626;
+  color: #DC2626;
+  border-radius: 12px;
+  min-height: 56px;
+  padding: 14px 24px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  text-align: left;
+}
+
+.btn-destructive:hover {
+  background-color: #FEF2F2;
+}
+
+.btn-destructive:active {
+  transform: scale(0.98);
+  background-color: #DC2626;
+  color: #FFFFFF;
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E2DBD2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CFC5B8;
+}
